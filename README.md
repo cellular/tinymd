@@ -1,5 +1,7 @@
 # tinymd 💃
 
+[![Build Status](https://travis-ci.org/fgnass/tinymd.svg?branch=master)](https://travis-ci.org/fgnass/tinymd)
+
 ## Why
 
 All other solutions were either _too large_ to be used in webapps where bundle size is important or _too constraint_ (like missing support for paragraphs or nested lists).
@@ -17,7 +19,7 @@ const opts = {};
 const html = tinymd('', opts);
 ```
 
-## Supported markdown syntax
+### Supported markdown syntax
 
 ```markdown
 # tinymd
