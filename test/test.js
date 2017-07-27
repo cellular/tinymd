@@ -16,10 +16,13 @@ spec('Non-italic snake case', 'Text _italic_ snake_case_text');
 
 spec(
   'Multiple paragraphs',
-  `long
-paragraph
+  `**bold**
+line 1
+line 2
 
-second`
+line 3
+**bold**
+`
 );
 
 spec(

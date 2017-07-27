@@ -47,10 +47,13 @@ exports[`Mixed lists 1`] = `
 `;
 
 exports[`Multiple paragraphs 1`] = `
-"<p>long
-paragraph</p>
+"<p><b>bold</b>
+line 1
+line 2</p>
 
-<p>second</p>"
+<p>line 3
+<b>bold</b></p>
+"
 `;
 
 exports[`Non-italic snake case 1`] = `"<p>Text <i>italic</i> snake_case_text</p>"`;

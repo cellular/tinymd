@@ -65,15 +65,21 @@ function chunk(m, opts) {
   });
 
   // move continuations to previous block
-  blocks.reduce((prev, cur, i) => {
+  let i = blocks.length;
+  while (i--) {
+    const cur = blocks[i];
     if (cur[1] === '+') {
-      if (prev && prev[1] !== 'hr' && prev[1] !== 'h') {
-        prev[0] += '\n' + cur[0];
-        blocks.splice(i, 1);
-      } else cur[1] = 'p';
+      if (i) {
+        const prev = blocks[i - 1];
+        if (prev[1] !== 'hr' && prev[1] !== 'h') {
+          prev[0] += '\n' + cur[0];
+          blocks.splice(i, 1);
+          continue;
+        }
+      }
+      cur[1] = 'p';
     }
-    return cur;
-  }, null);
+  }
 
   const out = [];
   const lists = [];
