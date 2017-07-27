@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Code blocks 1`] = `
+"<p>Lorem
+ipsum</p>
+
+<pre><code>let md = 'hello';
+md += 'world';</code></pre>
+
+<p>dolor sit amed</p>
+"
+`;
+
+exports[`Escaped asterisks 1`] = `"<p>aaa *bbb* ccc* \\\\ddd</p>"`;
+
+exports[`Escaped braces 1`] = `"<p>aaa {bbb} ccc</p>"`;
+
+exports[`Escaped chars 1`] = `"<p>aaa .bbb! ccc- ddd</p>"`;
+
+exports[`Escaped hashes 1`] = `"<p>aaa #bbb+ ccc- ddd</p>"`;
+
+exports[`Escaped links 1`] = `"<p>aaa [bbb](http://example.com) ccc ddd</p>"`;
+
+exports[`Header ids 1`] = `"<h1 id=\\"hello_world\\">hello world</h1>"`;
+
+exports[`Headings 1`] = `
+"<h1>h1</h1><h2>h2</h2><h3>h3</h3><h4>h4</h4><h5>h4</h5><h6>h6</h6><p>####### no heading</p>
+
+<p>#nospace-noheading</p>
+
+<h1>trailing hashes</h1><h1></h1>"
+`;
+
+exports[`Horizontal rulers 1`] = `"<hr/><hr/><hr/>"`;
+
+exports[`Inline styles 1`] = `"<p><b>bold</b> regular <del>del</del> <i>italic</i> <b>bold</b> <del><i>deli</i></del> <b><i>boldi</i></b> regular <i>ital</i></p>"`;
+
+exports[`Link rewriting 1`] = `"<p><a href=\\"/issue42\\">Issue 42</a></p>"`;
+
+exports[`Links 1`] = `"<p>lorem <a href=\\"http://example.com\\">example</a> <img src=\\"/image.jpg\\" alt=\\"alt\\"/> <a href=\\"/link.html\\" title=\\"title\\">with title</a> <a href=\\"http://example.com\\" target=\\"_blank\\">blank target</a> ipsum</p>"`;
+
+exports[`Links with whitespace 1`] = `"<p>lorem <a href=\\"mailto: me@example.com\\">example</a></p>"`;
+
+exports[`Mixed lists 1`] = `
+"
+<ul><li>1st level<ol><li>2nd level</li><li>2nd</li><li>2nd level</li></ol></li></ul><hr/>"
+`;
+
+exports[`Multiple paragraphs 1`] = `
+"<p>long
+paragraph</p>
+
+<p>second</p>"
+`;
+
+exports[`Non-italic snake case 1`] = `"<p>Text <i>italic</i> snake_case_text</p>"`;
+
+exports[`Ordered lists 1`] = `
+"
+<ul><li>1st level<ol><li>2nd level</li><li>2nd</li><li>2nd level</li></ol></li><li>1st level</li></ul>"
+`;
+
+exports[`Paragraph 1`] = `"<p>Lorem ipsum</p>"`;
+
+exports[`README example 1`] = `
+"
+<h1>tinymd</h1>
+
+<p>supports ...</p>
+
+<ul><li>lists<ul><li>nested lists<ol><li>ordered</li><li>with <a href=\\"http://example.com\\">links</a></li></ol></li><li><img src=\\"/cat.jpg\\" alt=\\"images\\"/></li><li>rulers</li></ul></li></ul>
+
+<hr/>
+
+<p>All <del>common</del> <b>inline</b> <i>styles</i></p>
+
+<pre><code>code blocks
+rulers</code></pre>
+
+<p>And [escaping](of special chars).</p>
+"
+`;
+
+exports[`Unorderd lists with dashes 1`] = `
+"
+<ul><li>1st level<ul><li>2nd level</li><li>2nd</li><li>2nd level</li></ul></li><li>1st level</li></ul>"
+`;
+
+exports[`Unordered lists 1`] = `
+"
+<ul><li>1st level<ul><li>2nd level</li><li>2nd</li><li>2nd level</li></ul></li><li>1st level</li></ul>"
+`;
