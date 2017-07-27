@@ -1,6 +1,6 @@
 # tinymd 💃
 
-[![Build Status](https://travis-ci.org/fgnass/tinymd.svg?branch=master)](https://travis-ci.org/fgnass/tinymd)
+[![Build Status](https://travis-ci.org/fgnass/tinymd.svg?branch=master)](https://travis-ci.org/fgnass/tinymd) ![Bundle size](http://img.badgesize.io/https://unpkg.com/tinymd?compression=gzip)
 
 ## Why
 
