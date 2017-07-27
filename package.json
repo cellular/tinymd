@@ -1,6 +1,6 @@
 {
   "name": "tinymd",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tiny markdown processor",
   "repository": "fgnass/tinymd",
   "main": "lib",
@@ -9,7 +9,12 @@
     "test": "jest",
     "prepublish": "npm run build"
   },
-  "keywords": ["markdown", "browser", "node", "lightweight"],
+  "keywords": [
+    "markdown",
+    "browser",
+    "node",
+    "lightweight"
+  ],
   "author": "Felix Gnass <fgnass@gmail.com>",
   "license": "MIT",
   "devDependencies": {
