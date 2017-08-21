@@ -21,7 +21,7 @@ exports[`Escaped hashes 1`] = `"<p>aaa #bbb+ ccc- ddd</p>"`;
 
 exports[`Escaped links 1`] = `"<p>aaa [bbb](http://example.com) ccc ddd</p>"`;
 
-exports[`Header ids 1`] = `"<h1 id=\\"hello_world\\">hello world</h1>"`;
+exports[`Header ids 1`] = `"<h1 id=\\"hello_world\\">Hello World</h1>"`;
 
 exports[`Headings 1`] = `
 "<h1>h1</h1><h2>h2</h2><h3>h3</h3><h4>h4</h4><h5>h4</h5><h6>h6</h6><p>####### no heading</p>

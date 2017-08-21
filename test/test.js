@@ -149,4 +149,4 @@ spec('Link rewriting', '[Issue 42](#42)', {
   }
 });
 
-spec('Header ids', '# hello world', { addIds: true });
+spec('Header ids', '# Hello World', { addIds: true });

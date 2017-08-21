@@ -119,7 +119,7 @@ function chunk(m, opts) {
 
 const hdId = (level, text) =>
   ` id="${text
-    .replace(/[^a-z0-9]/g, '_')
+    .replace(/[^a-z0-9]/gi, '_')
     .replace(/_{2,}/g, '_')
     .replace(/^_*(.*?)_*$/, '$1')
     .toLowerCase()}"`;
