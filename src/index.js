@@ -20,12 +20,12 @@ const lex = (md, opts) =>
     )
     // links and images
     .replace(
-      /(!?)\[([^\]<>]+)\]\(\s*(\+?)([^")]+?)(?: "([^()"]+)")?\s*\)/g,
-      (_, img, text, blank, ref, title) => {
+      /(!?)\[([^\]<>]+)\]\(\s*([^")]+?)(?: "([^()"]+)")?\s*\)/g,
+      (_, img, text, ref, title) => {
         let attrs = title ? ` title="${title}"` : '';
         if (img)
           return `<img src="${opts.rewrite(ref)}" alt="${text}"${attrs}/>`;
-        if (blank) attrs += ' target="_blank"';
+        if (opts.isBlank(ref)) attrs += ' target="_blank"';
         return `<a href="${opts.rewrite(ref)}"${attrs}>${text}</a>`;
       }
     );
@@ -124,10 +124,13 @@ const hdId = (level, text) =>
     .replace(/^_*(.*?)_*$/, '$1')
     .toLowerCase()}"`;
 
+const isBlank = ref => /^\+/.test(ref);
+
 export default function tinymd(md, opts = {}) {
   const o = {
     headingAttrs: opts.headingAttrs || opts.addIds ? hdId : () => '',
-    rewrite: opts.rewrite || (s => s)
+    rewrite: opts.rewrite || (s => s.replace(/^\+/, '')),
+    isBlank: opts.isBlank || isBlank
   };
   return md.replace(/.+(?:\n.+)*/g, m => chunk(m, o));
 }

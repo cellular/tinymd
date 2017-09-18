@@ -45,7 +45,20 @@ And \[escaping]\(of special chars).
 
 ## Options
 
-### Rewriting Links
+### Target _blank
+
+By default all links starting with `+` will get `target="_blank"` attribute. You can customize this behavior by providing an `isBlank` function:
+
+```js
+tinynmd('[link](http://example.com)', {
+  isBlank: ref => ~ref.indexOf('://')
+  }
+};
+```
+
+### Rewriting URLs
+
+You can rewrite all links and image sources by providing a `rewrite` function:
 
 ```js
 tinynmd('[Issue 42](#42)', {

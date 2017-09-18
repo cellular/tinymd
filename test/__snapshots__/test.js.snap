@@ -11,6 +11,8 @@ md += 'world';</code></pre>
 "
 `;
 
+exports[`Custom target _blank 1`] = `"<p><a href=\\"foo\\" target=\\"_blank\\">foo</a> <a href=\\"bar\\">bar</a></p>"`;
+
 exports[`Escaped asterisks 1`] = `"<p>aaa *bbb* ccc* \\\\ddd</p>"`;
 
 exports[`Escaped braces 1`] = `"<p>aaa {bbb} ccc</p>"`;

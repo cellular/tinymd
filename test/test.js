@@ -150,3 +150,7 @@ spec('Link rewriting', '[Issue 42](#42)', {
 });
 
 spec('Header ids', '# Hello World', { addIds: true });
+
+spec('Custom target _blank', '[foo](foo) [bar](bar)', {
+  isBlank: s => s == 'foo'
+});
