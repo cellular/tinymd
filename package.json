@@ -1,6 +1,6 @@
 {
   "name": "tinymd",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Tiny markdown processor",
   "repository": "fgnass/tinymd",
   "main": "lib",
