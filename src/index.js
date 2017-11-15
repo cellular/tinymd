@@ -20,7 +20,7 @@ const lex = (md, opts) =>
     )
     // links and images
     .replace(
-      /(!?)\[([^\]<>]+)\]\(\s*([^")]+?)(?: "([^()"]+)")?\s*\)/g,
+      /(!?)\[([^\]<>]*)\]\(\s*([^")]+?)(?: "([^()"]+)")?\s*\)/g,
       (_, img, text, ref, title) => {
         let attrs = title ? ` title="${title}"` : '';
         if (img)

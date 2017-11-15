@@ -35,6 +35,8 @@ exports[`Headings 1`] = `
 
 exports[`Horizontal rulers 1`] = `"<hr/><hr/><hr/>"`;
 
+exports[`Images 1`] = `"<p>Hello <img src=\\"/cat.gif\\" alt=\\"\\"/></p>"`;
+
 exports[`Inline styles 1`] = `"<p><b>bold</b> regular <del>del</del> <i>italic</i> <b>bold</b> <del><i>deli</i></del> <b><i>boldi</i></b> regular <i>ital</i></p>"`;
 
 exports[`Link rewriting 1`] = `"<p><a href=\\"/issue42\\">Issue 42</a></p>"`;

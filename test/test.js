@@ -154,3 +154,5 @@ spec('Header ids', '# Hello World', { addIds: true });
 spec('Custom target _blank', '[foo](foo) [bar](bar)', {
   isBlank: s => s == 'foo'
 });
+
+spec('Images', 'Hello ![](/cat.gif)');
